@@ -9,3 +9,5 @@ debian/alex-rs232-reader/
 debian/debhelper-build-stamp
 debian/files
 debian/alex-rs232-reader.substvars
+debian/alex-rs232-reader.debhelper.log
+debian/alex-rs232-reader.postrm.debhelper

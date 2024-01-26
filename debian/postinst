@@ -20,6 +20,8 @@ set -e
 
 case "$1" in
     configure)
+	systemctl daemon-reload || :
+	systemctl unmask alex-rs232-reader.service || :
 	systemctl start alex-rs232-reader.service || :
 	systemctl enable alex-rs232-reader.service || :
     ;;

@@ -19,6 +19,7 @@ set -e
 
 case "$1" in
     remove|upgrade|deconfigure)
+	systemctl daemon-reload || :
 	systemctl stop alex-rs232-reader.service || :
 	systemctl disable alex-rs232-reader.service || :
     ;;

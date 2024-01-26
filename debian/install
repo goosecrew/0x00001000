@@ -1,2 +1,2 @@
-bin/main /usr/bin/rs232-reader
+bin/rs232-reader /usr/bin
 systemd/alex-rs232-reader.service /lib/systemd/system
