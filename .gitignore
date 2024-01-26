@@ -3,3 +3,7 @@
 .vscode/c_cpp_properties.json
 .vscode/launch.json
 .vscode/ipch
+bin
+debian/.debhelper/
+debian/alex-rs232-reader/
+debian/debhelper-build-stamp
