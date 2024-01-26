@@ -1,0 +1,16 @@
+Source: alex-rs232-reader
+Section: unknown
+Priority: optional
+Maintainer: unknown <pgusev@unknown>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.0
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Browser: https://salsa.debian.org/debian/alex-rs232-reader
+#Vcs-Git: https://salsa.debian.org/debian/alex-rs232-reader.git
+Rules-Requires-Root: no
+
+Package: alex-rs232-reader
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
