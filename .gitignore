@@ -7,3 +7,5 @@ bin
 debian/.debhelper/
 debian/alex-rs232-reader/
 debian/debhelper-build-stamp
+debian/files
+debian/alex-rs232-reader.substvars
