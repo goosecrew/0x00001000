@@ -1,0 +1,10 @@
+[Unit]
+Description=RS-232 Reader
+After=syslog.target network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/rs232-reader
+
+[Install]
+WantedBy=multi-user.target

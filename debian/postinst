@@ -20,6 +20,8 @@ set -e
 
 case "$1" in
     configure)
+	systemctl start alex-rs232-reader.service || :
+	systemctl enable alex-rs232-reader.service || :
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
