@@ -56,8 +56,8 @@ func App(params Params) error {
 		return errors.Wrapf(err, `serial.OpenPort error`)
 	}
 
-	var bufChan chan []byte
-	var errChan chan error
+	var bufChan = make(chan []byte)
+	var errChan = make(chan error)
 	var fatalError error
 
 	go func(bufChan chan []byte, errChan chan error) {
@@ -93,7 +93,6 @@ func App(params Params) error {
 	go func(wg *sync.WaitGroup, bufChan chan []byte, errChan chan error) {
 		defer func() {
 			wg.Done()
-			fmt.Println(`exit `)
 		}()
 		var fd *os.File
 		var lastScan time.Time
